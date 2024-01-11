@@ -15,7 +15,7 @@ function setFontSize() {
     var fontSize = 2.8;
 
     if (text.length > 10) {
-        fontSize = Math.max(5, 2.8 - 0.1 * (text.length - 10)); // Set a minimum font size
+        fontSize = Math.max(2, 2.8 - 0.1 * (text.length - 10)); // Set a minimum font size
     }
 
     display.style.fontSize = fontSize + 'rem';
