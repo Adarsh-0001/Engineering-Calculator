@@ -90,6 +90,24 @@
     background-color: var(--orange);
 }
 
+#button-square-root,
+#button-square,
+#button-exponent,
+#button-sine,
+#button-cosine,
+#button-tangent {
+    background-color: var(--light-grey);
+    color: var(--blue);
+}
+
+#button-square-root:hover,
+#button-square:hover,
+#button-exponent:hover,
+#button-sine:hover,
+#button-cosine:hover,
+#button-tangent:hover {
+    background-color: var(--orange);
+}
 
 .red {
     background-color: var(--red);
