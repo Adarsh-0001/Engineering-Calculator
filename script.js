@@ -10,18 +10,21 @@ function isOperator(value) {
     return value == "+" || value == "-" || value == "*" || value == "/";
 }
 
-var buttons = document.getElementsByClassName("button");
-var display = document.getElementById("display");
-
 function setFontSize() {
     var text = display.textContent.trim();
     var fontSize = 2.8;
 
-    if (text.length > 10) { // You can adjust this threshold based on your design
-        fontSize = 2.8 - 0.1 * (text.length - 10);
+    if (text.length > 10) {
+        fontSize = Math.max(1, 2.8 - 0.1 * (text.length - 10)); // Set a minimum font size
     }
 
     display.style.fontSize = fontSize + 'rem';
+
+    // Check if the number is very large and switch to scientific notation
+    var number = parseFloat(text);
+    if (!isNaN(number) && Math.abs(number) > 1e10) {
+        display.textContent = number.toExponential(5); // Adjust the precision as needed
+    }
 }
 
 for (var i = 0; i < buttons.length; i++) {
