@@ -10,7 +10,19 @@ function isOperator(value) {
     return value == "+" || value == "-" || value == "*" || value == "/";
 }
 
-// ... (previous JavaScript code)
+var buttons = document.getElementsByClassName("button");
+var display = document.getElementById("display");
+
+function setFontSize() {
+    var text = display.textContent.trim();
+    var fontSize = 2.8;
+
+    if (text.length > 10) { // You can adjust this threshold based on your design
+        fontSize = 2.8 - 0.1 * (text.length - 10);
+    }
+
+    display.style.fontSize = fontSize + 'rem';
+}
 
 for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function () {
@@ -70,6 +82,7 @@ for (var i = 0; i < buttons.length; i++) {
         } else {
             display.textContent += value;
         }
+        setFontSize(); // Call setFontSize after each button click
     });
 }
 
