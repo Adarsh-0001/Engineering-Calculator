@@ -96,7 +96,7 @@
 #button-sine,
 #button-cosine,
 #button-tangent {
-    background-color: var(--light-grey);
+    background-color: var(--light-red);
     color: var(--blue);
 }
 
@@ -106,7 +106,7 @@
 #button-sine:hover,
 #button-cosine:hover,
 #button-tangent:hover {
-    background-color: var(--red);
+    background-color: var(--orange);
 }
 
 .red {
@@ -115,5 +115,5 @@
 }
 
 #button-zero {
-    width: 25%;
+    width: 50%;
 }
