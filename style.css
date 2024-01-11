@@ -96,7 +96,7 @@
 #button-sine,
 #button-cosine,
 #button-tangent {
-    background-color: var(--light-red);
+    background-color: var(--red);
     color: var(--blue);
 }
 
