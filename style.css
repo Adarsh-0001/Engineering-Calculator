@@ -81,6 +81,16 @@
     background-color: var(--orange);
 }
 
+#button-backspace {
+    background-color: var(--light-grey);
+    color: var(--blue);
+}
+
+#button-backspace:hover {
+    background-color: var(--orange);
+}
+
+
 .red {
     background-color: var(--red);
     color: white;
