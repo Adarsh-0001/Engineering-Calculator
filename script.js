@@ -43,6 +43,8 @@ for (var i = 0; i < buttons.length; i++) {
                 operand2 = null;
                 operator = null;
             }
+        } else if (value == "backspace") {
+            display.textContent = text.slice(0, -1);
         } else {
             display.textContent += value;
         }
