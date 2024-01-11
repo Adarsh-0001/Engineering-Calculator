@@ -97,7 +97,7 @@
 #button-cosine,
 #button-tangent {
     background-color: var(--red);
-    color: var(--blue);
+    color: var(--white);
 }
 
 #button-square-root:hover,
