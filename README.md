@@ -1,6 +1,6 @@
 # Engineering Calculator
 
-A simple web-based calculator with basic and engineering functionalities. This calculator supports standard arithmetic operations, as well as additional features such as square root, square, exponentiation, and trigonometric functions (sin, cos, tan).
+A versatile web-based calculator that provides both basic and engineering functionalities. This calculator supports standard arithmetic operations and includes advanced features such as square root, square, exponentiation, and trigonometric functions (sin, cos, tan).
 
 ## Features
 
@@ -12,21 +12,24 @@ A simple web-based calculator with basic and engineering functionalities. This c
 - Clear display (AC)
 - Backspace to delete the last entered digit (←)
 
+## Input Methods
+
+#### The calculator supports input from both the keyboard and by clicking on the calculator buttons. Additionally, keyboard input allows for easy and efficient calculation, making it accessible to users who prefer different input methods.
+
 ## Usage
 
 1. Clone the repository:
 
-   ```
-   git clone https://github.com/Adarsh-0001/calculator)https://github.com/Adarsh-0001/calculator
-   
-1. Open index.html in your web browser.
+   ```bash
+   git clone https://github.com/Adarsh-0001/calculator
+2. Open index.html in your web browser.
 
-2. Use the calculator to perform various mathematical operations.
+3. Use the calculator to perform various mathematical operations.
 
 ## Technologies Used
-### HTML
-### CSS
-### JavaScript
+##### HTML
+##### CSS
+##### JavaScript
 
 ## Contributing
 Contributions are welcome! If you have any suggestions or improvements, feel free to create an issue or submit a pull request.
