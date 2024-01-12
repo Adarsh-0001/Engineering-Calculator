@@ -12,7 +12,9 @@ A versatile web-based calculator that provides both basic and engineering functi
 - Clear display (AC)
 - Backspace to delete the last entered digit (←)
 
-![ss of calculator](calculator.png)
+
+<img src="calculator.png" alt="calculator Image" width="600" height="500">
+
 
 
 ## Input Methods
