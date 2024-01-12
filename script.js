@@ -1,6 +1,31 @@
 var buttons = document.getElementsByClassName("button");
 var display = document.getElementById("display");
 
+var operand1 = 0;
+var operand2 = null;
+var operator = null;
+
+function isOperator(value) {
+    return "+-*/^".includes(value);
+}
+
+function evaluateResult(operand1, operator, operand2) {
+    switch (operator) {
+        case "+":
+            return operand1 + operand2;
+        case "-":
+            return operand1 - operand2;
+        case "*":
+            return operand1 * operand2;
+        case "/":
+            return operand1 / operand2;
+        case "^":
+            return Math.pow(operand1, operand2);
+        default:
+            return null;
+    }
+}
+
 function setFontSize() {
     var text = display.textContent.trim();
     var fontSize = 2.8;
@@ -42,7 +67,7 @@ function handleButtonClick(value) {
     } else if (value == "=") {
         operand2 = parseFloat(text);
         var result = evaluateResult(operand1, operator, operand2);
-        if (result) {
+        if (result !== null) {
             display.textContent = result;
             operand1 = result;
             operand2 = null;
@@ -64,7 +89,7 @@ function handleButtonClick(value) {
         operator = value;
         operand1 = parseFloat(text);
         var result = evaluateResult(operand1, operator, operand2);
-        if (result) {
+        if (result !== null) {
             display.textContent = result;
             operand1 = result;
             operand2 = null;
