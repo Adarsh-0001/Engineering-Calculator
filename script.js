@@ -31,7 +31,7 @@ function setFontSize() {
     var fontSize = 2.8;
 
     if (text.length > 10) {
-        fontSize = Math.max(1, 2.8 - 0.1 * (text.length - 10)); // Set a minimum font size
+        fontSize = Math.max(1, 2.8 - 0.1 * (text.length - 10));
     }
 
     display.style.fontSize = fontSize + 'rem';
@@ -39,7 +39,7 @@ function setFontSize() {
     // Check if the number is very large and switch to scientific notation
     var number = parseFloat(text);
     if (!isNaN(number) && Math.abs(number) > 1e10) {
-        display.textContent = number.toExponential(5); // Adjust the precision as needed
+        display.textContent = number.toExponential(5);
     }
 }
 
@@ -88,13 +88,6 @@ function handleButtonClick(value) {
     } else if (value == "sin" || value == "cos" || value == "tan") {
         operator = value;
         operand1 = parseFloat(text);
-        var result = evaluateResult(operand1, operator, operand2);
-        if (result !== null) {
-            display.textContent = result;
-            operand1 = result;
-            operand2 = null;
-            operator = null;
-        }
     } else {
         display.textContent += value;
     }
@@ -102,7 +95,7 @@ function handleButtonClick(value) {
     setFontSize(); // Call setFontSize after each button click
 }
 
-// Event listeners for calculator buttons
+// Event listener for calculator buttons
 for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function () {
         var value = this.getAttribute('data-value');
@@ -123,6 +116,7 @@ document.addEventListener('keydown', function (event) {
         handleButtonClick('backspace');
     }
 });
+
 
 // var buttons = document.getElementsByClassName("button");
 // var display = document.getElementById("display");
