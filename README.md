@@ -12,6 +12,9 @@ A versatile web-based calculator that provides both basic and engineering functi
 - Clear display (AC)
 - Backspace to delete the last entered digit (←)
 
+![ss of calculator](calculator ss.png)
+
+
 ## Input Methods
 
 #### The calculator supports input from both the keyboard and by clicking on the calculator buttons. Additionally, keyboard input allows for easy and efficient calculation, making it accessible to users who prefer different input methods.
